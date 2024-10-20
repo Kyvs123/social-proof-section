@@ -22,11 +22,17 @@
         font-family: var(--main-font);
         padding: 1rem;
         text-align: center;
+        background-size: contain, contain;
+        background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: top left, bottom right;
     }
 
     main {
         width: 90%;
         height: auto;
+        margin-left: auto;
+        margin-right: auto;
 
     }
 
@@ -77,6 +83,7 @@
         margin-bottom: 1rem;
         border-radius: 5px;
         padding: 1.85rem;
+        
     }
 
     .comments img {
@@ -124,6 +131,11 @@
         width: 100%;
         font-family: var(--main-font);
         padding: 3rem;
+        background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: top left, bottom -200px right;
+        
+        
     }
 
 
@@ -160,33 +172,35 @@
     }
 
     .stars {
-        width: 28rem;
-        margin-right: 1.5rem;
-        
+        width: 28rem;        
         margin-top: 1rem;
     }
 
     .stars div{
         background-color: var(--light-grayish-magenta);
         position: relative;
+        display: flex;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        width: 25rem;
+        border-radius: 5px;
+        
     }
 
 
 
     .stars p{
-        
-        padding: 1rem;
-        margin-bottom: 1rem;
         color: var(--very-dark-magenta);
-        font-weight: 800;
+        font-weight: 700;
         border-radius: 5px;
+        margin-left: 1rem;
 
     }
 
-    .stars p span {
+    /* .stars p span {
         margin-right: 20px;
         margin-left: 1rem;
-    }
+    } */
 
     .item2 {
         grid-row-start: 1;
@@ -195,18 +209,19 @@
 
     .reviews {
         position: relative;
-        right: 4rem;
+        right: 4.5rem;
+        
     }
 
-    .guru {
-        position: relative;
-        right: 2rem;
-    }
-
+   
+.bestech{
+    margin-left: 2.5rem;
+}
 
     .comments {
+        
         display: flex;
-        position: relative;
+       
 
     }
 
